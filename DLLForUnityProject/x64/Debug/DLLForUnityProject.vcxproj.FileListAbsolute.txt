@@ -1,1 +1,2 @@
 C:\Proyectos\DLLLibraryForUnity\DLLForUnityProject\x64\Debug\DLLForUnityProject.dll
+E:\repos\Unity Projects\DLLLibraryForUnity\DLLForUnityProject\x64\Debug\DLLForUnityProject.dll

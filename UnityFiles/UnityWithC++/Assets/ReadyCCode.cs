@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using TMPro;
 using UnityEngine;
@@ -30,8 +31,17 @@ public class ReadyCCode : MonoBehaviour
   
     [DllImport("DLLForUnityProject.dll")]
     public static extern int getPointer();
-        
-    
+
+    private void Start()
+    {
+        var randomNumber = getRandomNumber();
+        Debug.Log( randomNumber);
+
+        var pointer = getPointer();
+        Debug.Log(pointer);
+
+    }
+
     public void GetPointer()
     {
         int c = getPointer();
